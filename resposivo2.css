@@ -1,0 +1,61 @@
+@media screen and (max-width: 1020px) {
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif,
+      sans-serif;
+  }
+
+  body {
+    background-image: url(src/img/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation-duration: 3s;
+    animation-name: slidein;
+  }
+
+  section.local h1 {
+    color: rgb(240, 235, 244);
+    border-style: groove;
+    border-radius: 15px;
+    width: 50%;
+    margin-left: 90px;
+  }
+
+  section.local p {
+    color: rgb(240, 235, 244);
+    display: flex;
+    justify-content: center;
+  }
+
+  section.local h1 {
+    color: aqua;
+    display: flex;
+    justify-content: center;
+    margin-top: 30%;
+  }
+  
+  section button {
+    border-radius: 15px;
+    padding: 7px;
+    display: flex;
+    margin-left: 40%;
+    margin-top: 15px;
+    background-color: aqua;
+    border: none;
+    color: rgb(0, 1, 1);
+  }
+
+  section button:hover {
+  background-color: aliceblue;
+  }
+
+  section button a {
+    text-decoration: none;
+  }
+
+  section a:hover {
+  color: black;
+  }
+}

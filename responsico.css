@@ -1,0 +1,125 @@
+@media screen and (max-width: 1020px) {
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif,
+      sans-serif;
+  }
+
+  body {
+    background-image: url(src/img/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation-duration: 3s;
+    animation-name: slidein;
+  }
+
+  section.title h1 {
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    margin-top: 25%;
+    font-size: 40px;
+    border-style: groove;
+    box-shadow: 1px 1px 1px;
+    color: orange;
+    border-radius: 15px;
+  }
+
+  section.title button {
+    display: flex;
+    margin-left: 30%;
+    border: none;
+    border-radius: 15px;
+    padding: 5px;
+    animation: flutuar 2s infinite ease;
+  }
+
+  section.title button:hover {
+    background-color: aqua;
+  }
+
+  section.title A {
+    text-decoration: none;
+  }
+  section.title A:hover {
+    color: rgb(1, 11, 20);
+  }
+
+  section.foto img {
+    width: 100%;
+    margin-left: 71px;
+    position: fixed;
+    animation: flutuar 2s infinite ease;
+  }
+
+  @keyframes flutuar {
+    0% {
+      -webkit-transform: translateY(-8px);
+      transform: translateY(-8px);
+    }
+    50% {
+      -webkit-transform: translateY(-4px);
+      transform: translateY(-4px);
+    }
+    100% {
+      -webkit-transform: translateY(-8px);
+      transform: translateY(-8px);
+    }
+  }
+
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+
+  footer.logo img {
+    width: 60%;
+    margin-left: 80px;
+    margin-top: 20em;
+    filter: drop-shadow(1px 1px 7px);
+    color: aliceblue;
+  }
+
+  footer.btn-social a {
+    display: flex;
+    padding: 10px;
+    text-decoration: none;
+  }
+
+  footer.btn-social i {
+    display: flex;
+    padding: 1px;
+    font-size: 30px;
+    color: rgb(2, 2, 0);
+  }
+
+  footer.btn-social {
+    display: flex;
+    padding: 10px;
+    margin-top: 15px;
+  }
+
+  footer.btn-social button {
+    display: flex;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: rgba(244, 174, 12, 0.913);
+  }
+
+  footer.btn-social button:hover {
+    display: flex;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: rgba(242, 244, 248, 0.913);
+  }
+}
+
